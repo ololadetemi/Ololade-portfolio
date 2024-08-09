@@ -212,7 +212,7 @@ span{
 
 :root {
     --bg-color: #080808;
-    --second-bg-color: #1b0000; 
+    --second-bg-color: #3b062e; 
     --text-color: white;
     --main-color: #d4a5ff;
 }
@@ -237,8 +237,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
+    z-index: 1000;
     width: 100%;
+}
+#menu-icon{
+    font-size: 3.6rem;
+    color: var(--main-color);
+    display: none;
 }
 
 .logo {
@@ -246,7 +251,7 @@ body {
     color: var(--text-color);
     font-weight: 800;
     cursor: pointer;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease-in-out;
 }
 
 .logo:hover {
@@ -262,7 +267,7 @@ body {
     color: var(--text-color);
     margin-left: 4rem;
     font-weight: 500;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+    transition: 0.3s ease-in-out;
     border-bottom: 3px solid transparent;
 }
 
@@ -270,12 +275,6 @@ body {
 .navbar a.active{
     color: var(--main-color);
     border-bottom: 3px solid var(--main-color);
-}
-
-#menu-icon{
-    font-size: 3.6rem;
-    color: var(--main-color);
-    display: none;
 }
 
 section {
@@ -305,7 +304,8 @@ span {
 .home-content h3 {
     margin-bottom: 2rem;
     margin-top: 1rem;
-    font-size: 3.5rem;
+    font-size: 4rem;
+    margin: 3rem;
 }
 
 .home-content h1 {
@@ -335,7 +335,7 @@ span {
     max-width: 1000px;
 }
 
-.social-icons {
+.social-icons a{
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -347,7 +347,7 @@ span {
     border-radius: 50%;
     color: var(--main-color);
     margin: 3rem 1.5rem 3rem 0;
-    transition: color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    transition: 0.3s ease-in-out
 }
 
 .social-icons a:hover {
@@ -368,7 +368,7 @@ span {
     border: 2px solid transparent;
     letter-spacing: 0.1rem;
     font-weight: 600;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    transition: transform 0.3s ease-in-out;
     cursor: pointer;
 }
 
@@ -394,4 +394,91 @@ span {
     box-shadow: 0 0 25px var(--main-color);
     background-color: var(--main-color);
     color: black;
+}
+
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    background: var(--second-bg-color);
+}
+.about-img img{
+    width: 32vw;
+    border: 50%;
+    box-shadow: 0 0 25px var(--main-color);
+    transition: 0.3s ease-in-out;
+}
+
+.about-img img:hover{
+    box-shadow: 0 0 100px var(--main-color);
+}
+
+.about-content h2{
+    font-size: 7rem;
+    text-align: left;
+}
+.about-content p{
+    font-size: 2rem;
+}
+.about-content .btn{
+    margin: 3rem 0;
+}
+
+::-webkit-scrollbar{
+    width: 20px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #605e5f;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--bg-color);
+}
+
+.heading{
+    text-align: center;
+    font-size: 7rem;
+    margin: 5rem o;
+}
+
+.skills{
+    background-color: var(--bg-color);
+}
+
+.skills h2{
+    color: var(--text-color);
+}
+.skills.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    align-items: start;
+    gap: 2.5rem;
+}
+.skill-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 100px;
+    border-radius: 3rem;
+    cursor: pointer;
+    border: 5px solid transparent;
+}
+.skill-box:hover{
+    background: var(--second-bg-color);
+    color: var(--main-color);
+    border: 5px solid var(--main-color);
+    transform: scale(1.03);
+}
+
+.skill-info{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.skill-info{
+    font-size: 8rem;
 }
