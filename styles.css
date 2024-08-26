@@ -318,13 +318,77 @@ span {
     font-size: 7rem;
     margin: 5rem o;
 }
-
-.skills{
-    background-color: var(--bg-color);
+.skills-container {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    margin: 0 auto;
 }
 
-.skills h2{
+.skill-item {
+    position: absolute;
+    width: 155px;
+    height: 175px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.1rem;
+    color: black;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.skill-item:hover{
     color: var(--text-color);
+    transform: scale(1.3) translateX(-5px);
+    box-shadow: 0 0 25px var(--main-color);
+    background-color: var(--main-color);
+}
+
+.html {
+    background-color: #ae47cb6e;
+    top: 20%;
+    left: 30%;
+}
+.css {
+    background-color: #e270d186;
+    top: 20%;
+    left: 50%;
+}
+.js {
+    background-color: #c84ff09e;
+    top: 40%;
+    left: 40%;
+}
+.nodejs {
+    background-color: #e16161b6;
+    top: 40%;
+    left: 60%;
+}
+.express {
+    background-color: #bb3d9dac;
+    top: 60%;
+    left: 50%;
+}
+.mongodb {
+    background-color: #d224b87e;
+    top: 60%;
+    left: 30%;
+}
+.react {
+    background-color: #e34b8a8c;
+    top: 80%;
+    left: 40%;
+}
+.aws {
+    background-color: #a82b2b92;
+    top: 80%;
+    left: 60%;
+}
+.docker {
+    background-color: #a9202075;
+    top: 50%;
+    left: 20%;
 }
 
 .projects{
@@ -401,14 +465,37 @@ span {
 .footer{
     background-color: var(--second-bg-color);
     padding: 50px 0;
+}
+
+.footer .social-icons{
+    text-align: center;
+}
+.footer ul{
+    text-align: center;
+    font-size: 1.8rem;
+}
+.footer ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+.footer ul li a{
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease-in-out;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid var(--main-color);
+}
+.footer .copyright{
     text-align: center;
     margin-top: 40px;
     font-size: 16px;
 }
 
-@media(media-width: 768px) {
+
+@media(media-width: 128px) {
     #menu-icon{
-        display:block
+        display: block;
     }
     .navbar{
         position: absolute;
