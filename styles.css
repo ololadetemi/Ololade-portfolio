@@ -12,10 +12,10 @@
 }
 
 :root {
-    --bg-color: #080808;
-    --second-bg-color: #3f3c3e9d; 
+    --bg-color: #332b35;
+    --second-bg-color: #5a44539d; 
     --text-color: white;
-    --main-color: #d4a5ff;
+    --main-color: #804e8e;
 }
 
 html {
@@ -321,7 +321,7 @@ span {
 .skills-container {
     position: relative;
     width: 100%;
-    height: 400px; /* Adjust height as needed */
+    height: 500px; 
     margin: 0 auto;
 }
 
