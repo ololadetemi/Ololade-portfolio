@@ -19,7 +19,7 @@
 }
 
 html {
-    font-size: 60%;
+    font-size: 55%;
     overflow-x: hidden;
 }
 
@@ -60,7 +60,7 @@ body {
 }
 
 .logo span {
-    text-shadow: 0 0 25px var(--main-color);
+    text-shadow: 0 0 25px rgb(68, 11, 88);
 }
 
 .navbar a{
@@ -99,7 +99,7 @@ section {
 }
 
 span {
-    color: var(--main-color);
+    color: rgb(68, 11, 88);
 }
 
 .home-content h3 {
@@ -324,7 +324,7 @@ span {
 }
 
 ::-webkit-scrollbar{
-    width: 20px;
+    width: 5px;
 }
 ::-webkit-scrollbar-thumb{
     background-color: #605e5f;
@@ -485,6 +485,9 @@ span {
 .footer{
     background-color: var(--second-bg-color);
     padding: 50px 0;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
 }
 
 .footer .social-icons{
